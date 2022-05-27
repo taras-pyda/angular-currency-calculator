@@ -1,0 +1,37 @@
+@import "../../styles/utils";
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  row-gap: 30px;
+
+  &__item {
+    display: flex;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid $c-grey;
+    border-radius: 5px;
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 25px;
+    color: $c-black;
+  }
+
+  &__select {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 25px;
+    color: $c-green;
+  }
+}

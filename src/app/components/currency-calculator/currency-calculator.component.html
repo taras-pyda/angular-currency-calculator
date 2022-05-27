@@ -1,0 +1,49 @@
+<div class="calculator">
+  <div class="calculator__item">
+    <input
+      type="number"
+      (change)="allowsChangeSaleSum()"
+      [(ngModel)]="saleSum"
+      class="calculator__input"
+    >
+
+    <select
+      [(ngModel)]="saleCurrency"
+      (change)="allowsChangeSaleSum()"
+      class="calculator__select"
+    >
+      <option value="UAH">UAH</option>
+
+      <option
+        *ngFor="let currency of currencies"
+        [value]="currency.ccy"
+      >
+        {{ currency.ccy }}
+      </option>
+    </select>
+  </div>
+
+  <div class="calculator__item">
+    <input
+      type="number"
+      (change)="forbidsChangeBuySum()"
+      [(ngModel)]="buySum"
+      class="calculator__input"
+    >
+
+    <select
+      [(ngModel)]="buyCurrency"
+      (change)="allowsChangeSaleSum()"
+      class="calculator__select"
+    >
+      <option value="UAH">UAH</option>
+
+      <option
+        *ngFor="let currency of currencies"
+        [value]="currency.ccy"
+      >
+        {{ currency.ccy }}
+      </option>
+    </select>
+  </div>
+</div>
