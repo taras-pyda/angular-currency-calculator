@@ -1,0 +1,39 @@
+<header class="header">
+  <div
+    *ngIf="usdCurrency"
+    class="header__currency"
+  >
+    <h4 class="header__currency-title">
+      USD:
+    </h4>
+
+    <p class="header__currency-rates">
+      <span class="header__currency-rate">
+        Buy - {{ usdCurrency.buy }}
+      </span>
+
+      <span class="header__currency-rate">
+        Sale - {{ usdCurrency.sale }}
+      </span>
+    </p>
+  </div>
+
+  <div
+  *ngIf="eurCurrency"
+    class="header__currency"
+  >
+    <h4 class="header__currency-title">
+      EUR:
+    </h4>
+
+    <p class="header__currency-rates">
+      <span class="header__currency-rate">
+        Buy - {{ eurCurrency.buy }}
+      </span>
+
+      <span class="header__currency-rate">
+        Sale - {{ eurCurrency.sale }}
+      </span>
+    </p>
+  </div>
+</header>

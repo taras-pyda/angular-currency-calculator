@@ -1,0 +1,37 @@
+@import "../../styles/_utils";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 40px;
+  height: $h-header;
+  border-bottom: 1px solid $c-grey;
+
+  &__currency {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 10px;
+    height: 100%;
+  }
+
+  &__currency-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  &__currency-rates {
+    display: grid;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__currency-rate {
+    color: $c-red;
+  }
+}
